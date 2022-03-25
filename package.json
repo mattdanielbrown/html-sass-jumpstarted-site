@@ -18,7 +18,9 @@
     "build": "npm-run-all copy:* scss css",
     "lint": "stylelint 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
     "lint:fix": "stylelint --fix 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
-    "bump": "npm --no-git-tag-version version"
+    "bump": "npm --no-git-tag-version version",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
@@ -34,9 +36,11 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "@snyk/protect": "latest"
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "snyk": true
 }
