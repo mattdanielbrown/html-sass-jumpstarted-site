@@ -44,3 +44,5 @@ patch:
         patched: '2022-03-25T20:11:07.557Z'
     - stylelint-selector-bem-pattern > stylelint > @stylelint/postcss-css-in-js > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2022-03-25T20:11:07.557Z'
+    - stylelint-selector-bem-pattern > stylelint > @stylelint/postcss-css-in-js > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2022-04-16T18:16:30.599Z'
